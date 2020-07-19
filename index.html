@@ -32,15 +32,12 @@
        }
        .header .h_top .topCon{
            height:40px;
-           background:pink;
        }
        .header .h_top .topCon .conLeft{
            height:40px;
-           background:red;
            line-height:40px;
        }
        .header .h_top .topCon .conLeft .leftTxt1{
-           background:gold;
            height:40px;
         }
         .header .h_top .topCon .conLeft .leftTxt1 .logo{
@@ -58,7 +55,6 @@
             margin-right:36px;
         }
         .header .h_top .topCon .conLeft .ulList{
-            background:orange;
             font-size:14px;
         }
         .header .h_top .topCon .conLeft .ulList li{
@@ -77,19 +73,21 @@
         }
        .header .h_top .topCon .conRight{
            height:40px;
-           background:skyblue;
        }
        .header .h_top .topCon .conRight .ulList{
            line-height:40px;
            font-size:12px;
-           background:red;
        }
        .header .h_top .topCon .conRight .ulList li{
            float:left;
        }
        .header .h_top .topCon .conRight .ulList li a{
-           background:gold;
            display:block;
+       }
+       .header .h_top .topCon .conRight .ulList li .login span{
+           background-position:-9px 32px;
+           background-size:60px 106px;
+           margin-right:10px;
        }
        .header .h_top .topCon .conRight .ulList li .btn span{
            float:left;
@@ -97,11 +95,29 @@
            height:18px;
            background-image:url("img/sprite.png");
            background-repeat:no-repeat;
-           background-color:green;
-           background-position:-9px 32px;
-           background-size:60px 106px;
            margin-top:10px;
-           margin-right:10px;
+       }
+       .header .h_top .topCon .conRight .ulList li a{
+           color:#93b5c0;
+       }
+       .header .h_top .topCon .conRight .ulList li .app{
+           color:#08d7a2;
+           margin-right:24px;
+       }
+       .header .h_top .topCon .conRight .ulList li .app span{
+           background-position:-33px -32px;
+       }
+       .header .h_top .topCon .conRight .ulList li .login2{
+           margin-right:40px;
+       }
+       .header .h_top .topCon .conRight .ulList li .login2 span{
+           padding:0px 12px;
+       }
+       .header .h_top .topCon .conRight .ulList li:last-child{
+           margin-right:8px;
+       }
+       .header .h_top .topCon .conRight .ulList li:last-child a{
+           color:#93b5c0;
        }
        .header .h_bottom{
            height:120px;
@@ -136,9 +152,9 @@
                     <div class="conRight fr">
                         <ul class="ulList clearFixed">
                             <li><a href="" class="login btn"><span></span>登录</a></li>
-                            <li><a href="">注册</a></li>
-                            <li><a href="" class="btn">拉钩APP</a></li>
-                            <li><a href="">登录企业版</a></li>
+                            <li><a href="" class="login2"><span>|</span>注册</a></li>
+                            <li><a href="" class="btn app"><span></span>拉钩APP</a></li>
+                            <li><a href="">进入企业版</a></li>
                         </ul>
                     </div>
                 </div>
