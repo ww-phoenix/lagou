@@ -7,11 +7,20 @@
     <style type="text/css">
        *{margin:0;padding:0;}
        p,h1,h2,h3,h4,h5,h6,dl,dt,dd,ol,ul,li{margin:0px;padding:0px;}
+       li{list-style:none;}
+       a{text-decoration:none;color:#000;}
        
        /*设置版心*/
        .main{
            width:1200px;
            margin:0 auto;
+       }
+       .fl{float:left;}
+       .fr{float:right;}
+       .clearFixed:after{
+           content:"";
+           display:block;
+           clear:both;
        }
        .header{
            height:160px;
@@ -24,6 +33,49 @@
        .header .h_top .topCon{
            height:40px;
            background:pink;
+       }
+       .header .h_top .topCon .conLeft{
+           height:40px;
+           background:red;
+           line-height:40px;
+       }
+       .header .h_top .topCon .conLeft .leftTxt1{
+           background:gold;
+           height:40px;
+        }
+        .header .h_top .topCon .conLeft .leftTxt1 .logo{
+            font-size:22px;
+            color:#00b38a;
+            margin-right:32px;
+        }
+        .header .h_top .topCon .conLeft .leftTxt1 .city{
+            font-size:12px;
+            color:#00b38a;
+            margin-right:14px;
+        }
+        .header .h_top .topCon .conLeft .leftTxt1 .city1{
+            font-size:12px;
+            margin-right:36px;
+        }
+        .header .h_top .topCon .conLeft .ulList{
+            background:orange;
+            font-size:14px;
+        }
+        .header .h_top .topCon .conLeft .ulList li{
+            float:left;
+            width:70px;
+            text-align:center;
+        }
+        .header .h_top .topCon .conLeft .ulList li a{
+            color:#fff;
+        }
+        .header .h_top .topCon .conLeft .ulList li:first-child{
+            background:#24282c;
+        }
+       .header .h_top .topCon .conRight{
+           width:300px;
+           height:40px;
+           background:skyblue;
        }
        .header .h_bottom{
            height:120px;
@@ -40,7 +92,23 @@
     <div id="box">
         <div class="header">
             <div class="h_top">
-                <div class="topCon main"></div>
+                <div class="topCon main clearFixed">
+                    <div class="conLeft fl">
+                        <div class="leftTxt1 fl">
+                            <a href="" class="logo">拉钩</a>
+                            <a href="" class="city">全国站</a>
+                            <a href="" class="city1">切换城市</a>
+                        </div>
+                        <ul class="ulList clearFixed fl">
+                            <li><a href="#">首页</a></li>
+                            <li><a href="#">公司</a></li>
+                            <li><a href="#">校园</a></li>
+                            <li><a href="#">言职</a></li>
+                            <li><a href="#">课程</a></li>
+                        </ul>
+                    </div>
+                    <div class="conRight fr"></div>
+                </div>
             </div>
             <div class="h_bottom">
                 <div class="botCon main"></div>
@@ -51,6 +119,8 @@
         <div class="content"></div>
         <div class=footer></div>
     </div>
+
+
     
 </body>
 </html>
