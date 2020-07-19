@@ -4,8 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style type="text/css">
+       *{margin:0;padding:0;}
+       p,h1,h2,h3,h4,h5,h6,dl,dt,dd,ol,ul,li{margin:0px;padding:0px;}
+       
+       /*设置版心*/
+       .main{
+           width:1200px;
+           margin:0 auto;
+       }
+       .header{
+           height:160px;
+           background:red;
+       }
+       .header .h_top{
+           height:40px;
+           background:#32373e;
+       }
+       .header .h_top .topCon{
+           height:40px;
+           background:pink;
+       }
+       .header .h_bottom{
+           height:120px;
+           background:#00b38a;
+       }
+       .header .h_bottom .botCon{
+           height:120px;
+           background:blue;
+       }
+
+    </style>
 </head>
 <body>
+    <div id="box">
+        <div class="header">
+            <div class="h_top">
+                <div class="topCon main"></div>
+            </div>
+            <div class="h_bottom">
+                <div class="botCon main"></div>
+            </div>
+        </div>
+        <div class="sear"></div>
+        <div class=banner></div>
+        <div class="content"></div>
+        <div class=footer></div>
+    </div>
     
 </body>
 </html>
