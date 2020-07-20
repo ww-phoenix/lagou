@@ -236,14 +236,10 @@
            padding:0px 11px;
        }
        .bannCon{
-           height:430px;
-           background:pink;
            padding-top:46px;
        }
        .bannCon .banLeft{
            width:300px;
-           height:430px;
-           background:skyblue;
        }
        .bannCon .banLeft .banList{
            font-size:12px;
@@ -266,10 +262,82 @@
        }
        .bannCon .banRight{
            width:840px;
-           height:430px;
-           background:yellowgreen;
+           height:437px;
+           position:relative;
        }
-       
+       .bannCon .banRight .banImgBox{
+           width:840px;
+           height:437px;
+       }
+       .bannCon .banRight .banImgBox .banImg{
+           width:100%;
+           height:100%;
+       }
+       .bannCon .banRight:hover span{
+           display:block;
+       }
+       .bannCon .banRight span{
+           position:absolute;
+           top:50%;
+           margin-top:-17px;
+           width:22px;
+           height:34px;
+           font-size:34px;
+           color:#757478;
+           font-family:"宋体";
+           display:none;
+           font-weight:bold;
+       }
+       .bannCon .banRight .btnLeft{
+           left:20px;
+       }
+       .bannCon .banRight .btnRight{
+           right:20px;
+       }
+
+       /*content*/
+       .content .line1{
+           margin-top:20px;
+       }
+       .content .lineTop{
+           height:118px;
+           background:pink;
+       }
+       .content .lineTop .top1{
+           height:53px;
+           line-height:53px;
+           border-bottom: 1px solid #e8e8e8;
+       }
+       .content .lineTop .top1 .hotBtn{
+           border-bottom:2px solid #000;
+           padding-bottom:15px;
+           margin-right:60px;
+       }
+       .content .lineTop .top1 .newBtn{
+           color:#999999;
+       }
+       .content .lineTop .top2{
+           height:42px;
+           padding-top:24px;
+           font-size:12px;
+       }
+       .content .lineTop .top2 span{
+           width:18px;
+           height:18px;
+           background:#e6e6e6;
+           color:#fff;
+           text-align:center;
+           border-radius:50%;
+           margin-right:14px;
+       }
+       .content .lineTop .top2 a:nth-of-type(1){
+           color:#999999;
+           margin-right:55px;
+       }
+       .content .lineTop .top2 a:nth-of-type(2){
+           color:#00b38a;
+       }
+
 
 
 
@@ -348,7 +416,7 @@
             </div>
         </div>
         <div class=banner>
-            <div class="bannCon main">
+            <div class="bannCon main clearFixed">
                 <div class="banLeft fl">
                     <ul class="banList">
                         <li>
@@ -417,10 +485,42 @@
                         </li>
                     </ul>
                 </div>
-                <div class="banRight fr"></div>
+                <div class="banRight fr">
+                    <div class="banImgBox">
+                        <img src="img/banner.JPG" class="banImg" alt="">
+                    </div>
+                    <span class="btnLeft">&lt;</span>
+                    <span class="btnRight">&gt;</span>
+                </div>
             </div>
         </div>
-        <div class="content"></div>
+        <div class="content main">
+            <div class="line1">
+                <div class="lineTop">
+                    <div class="top1">
+                        <a href="" class="hotBtn">24hour热门</a>
+                        <a href="" class="newBtn">最新职位</a>
+                    </div>
+                    <div class="top2">
+                        <span class="fl">?</span>
+                        <a href="" class="fl">在过去的24小时，最多人看过的岗位在这里</a>
+                        <a href="" class="fl">我知道了</a>
+                    </div>
+                </div>
+            </div>
+            <div class="line2">
+                <div class="lineTop">
+                    <div class="top1">
+                        <a href="" class="hotBtn">互联网热门公司榜</a>
+                    </div>
+                    <div class="top2">
+                        <span class="fl">?</span>
+                        <a href="" class="fl">在过去的24小时，最多人看过的岗位在这里</a>
+                        <a href="" class="fl">我知道了</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class=footer></div>
     </div>
 
