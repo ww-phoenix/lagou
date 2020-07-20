@@ -10,6 +10,7 @@
        li{list-style:none;}
        a{text-decoration:none;color:#000;}
        img{display:block;}
+       input{border:none;}
        
        /*设置版心*/
        .main{
@@ -126,13 +127,12 @@
        }
        .header .h_bottom .botCon{
            height:120px;
-           background:blue;
        }
        .h_bottom .botCon .conLeft{
            position:relative;
            width:566px;
            height:120px;
-           background:red url("img/logo.png") no-repeat;
+           background:url("img/logo.png") no-repeat;
            background-size:226px 100%;
        }
        .h_bottom .botCon .conLeft .imgBox{
@@ -150,15 +150,46 @@
        .h_bottom .botCon .conRight{
            width:454px;
            height:120px;
-           background:pink;
            position:relative;
        }
        .h_bottom .botCon .conRight .btnBox{
            position:absolute;
            top:50%;
            margin-top:-18px;
+           width:100%;
            height:36px;
-           background:red;
+           color:#757575;
+           font-size:12px;
+       }
+       .h_bottom .botCon .conRight .btnBox .txt1{
+           width:163px;
+           height:36px;
+           margin-right:25px;
+           text-indent:10px;
+       }
+       .h_bottom .botCon .conRight .btnBox .pBtn{
+           width:148px;
+           height:36px;
+           margin-right:12px;
+           background:#fff;
+       }
+       .h_bottom .botCon .conRight .btnBox .pBtn .txt2{
+           width:94px;
+           height:36px;
+           text-indent:10px;
+       }
+       .h_bottom .botCon .conRight .btnBox .pBtn .aTxt2{
+           padding:6px 4px 9px;
+           color:#00b38a;
+       }
+       .h_bottom .botCon .conRight .btnBox .btnSub{
+           width:106px;
+           height:36px;
+           border:1px solid #ccefe7;
+           background:transparent;
+       }
+
+
 
     </style>
 </head>
@@ -195,18 +226,19 @@
                 <div class="botCon main">
                     <div class="conLeft fl">
                         <div class="imgBox">
-                            <img src="img/footer_lagou.png" alt="" />
+                            <img src="./img/footer_lagou.png" alt="" />
                         </div>
                         <div class="txtBox">7555585家公司|676767676个职位在拉钩等你</div>
                     </div>
                     <div class="conRight fr">
                         <div class="btnBox">
-                            <input type="text" placeholder="输入手机号" class="fl">
-                            <p class="fl">
-                                <input type="text" placeholder="验证码">
-                                <a href="">获取</a>
+                            <input type="text" placeholder="输入手机号" class="fl txt1">
+                            <p class="fl pBtn">
+                                <input type="text" placeholder="验证码" class="txt2">
+                                |
+                                <a href="" class="aTxt2">获取</a>
                             </p>
-                            <input type="submit" value="登录/注册" class="fl">
+                            <input type="submit" value="登录/注册" class="fl btnSub">
                         </div>
                     </div>
                 </div>
