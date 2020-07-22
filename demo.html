@@ -36,7 +36,7 @@
 		bottom:-1px;
 		margin-left:-10px;
 		border:10px solid transparent;
-		border-bottom-color:#f00;
+		border-bottom-color:#00b38a;
 	}
 
 	body{background:#f8f9fc;}
@@ -64,7 +64,7 @@
 		padding:6px;
 	}
 	.boxCon .forBox .imgBox{
-		background:pingk;
+		background:pink;
 	}
 	.boxCon .forBox .imgBox img{
 		margin-right:6px;
@@ -73,10 +73,23 @@
 		margin-top:-5px;
 	}
 	.boxCon .forBox .inpLeft{
-		width:290px;
+		position:relative;
+		width:290px;    
 		height:277px;
 		background:yellowgreen;
 		padding:0px 63px;
+		border-right:1px dashed #555;
+	}
+	.boxCon .forBox .inpLeft .or{
+		position:absolute;
+		width:18px;
+		height:18px;
+		right:-8px;
+		top:50%;
+		margin-top:-9px;
+		background:#fff;
+		text-align:center;
+		color:#555;
 	}
 	.boxCon .forBox .inpLeft .line1{
 		height:40px;
@@ -92,12 +105,38 @@
 	}
 	.boxCon .forBox .inpLeft .line1 p:nth-child(1){
 		color:#00b38a;
+		border-bottom:1px solid #00b38a;
+	}
+	.boxCon .forBox .inpLeft .lineImp{
+		height:64px;
+		border-bottom:1px solid #555;;
+	}
+	.boxCon .forBox .inpLeft .lineImp input{
+		width:100%;
+		height:44px;
+		padding-top:20px;
+	}
+	.boxCon .forBox .inpLeft .txt{
+		color:#00b38a;
+		font-size:12px;
+		height:58px;
+		line-height:58px;
+		text-align:right:
+	}
+	.boxCon .forBox .inpLeft input[type="submit"]{
+		height:48px;
+		width:100%;
+		background:#00b38a;
+		color:#fff;
+		text-align:center;
+		line-height:48px;
+		font-size:18px;
 	}
 
 	.boxCon .forBox .inpRight{
-		width:270px;
 		height:277px;
 		background:yellow;
+		padding-left:52px;
 	}
 
 
@@ -127,6 +166,15 @@
 						<p class="txtP1 fl btnRed btnWhit">密码登录</p>
 						<p class="txtP2 fl">验证码登录</p>
 					</div>
+					<div class="lineImp">
+						<input type="text" placeholder="请输入常用手机号或邮箱">
+					</div>
+					<div class="lineImp">
+						<input type="password" placeholder="请输入密码">
+					</div>
+					<p class="txt fr">忘记密码？</p>
+					<input type="submit" value="登录">
+					<span class="or">or</span>
 				</div>
 				<div class="inpRight fl"></div>
 			</div>
