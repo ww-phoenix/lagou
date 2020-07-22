@@ -5,6 +5,40 @@
 	<title>Document</title>
 	<style type="text/css">
 	*{margin:0;padding:0;}
+	p,h1,h2,h3,h4,h5,h6,dl,dt,dd,ol,ul,li{margin:0px;padding:0px;}
+    li{list-style:none;}
+    a{text-decoration:none;color:#000;}
+    img{display:block;}
+    input{border:none;}
+       
+    .fl{float:left;}
+    .fr{float:right;}
+    .clearFixed:after{
+           content:"";
+           display:block;
+           clear:both;
+    }
+	.btnRed:after{
+		content:"";
+		display:block;
+		position:absolute;
+		left:50%;
+		bottom:-2px;
+		margin-left:-10px;
+		border:10px solid transparent;
+		border-bottom-color:#fff;
+	}
+	.btnWhit:before{
+		content:"";
+		display:block;
+		position:absolute;
+		left:50%;
+		bottom:-1px;
+		margin-left:-10px;
+		border:10px solid transparent;
+		border-bottom-color:#f00;
+	}
+
 	body{background:#f8f9fc;}
 	.header{
 		height:360px;
@@ -29,6 +63,42 @@
 		border:1px solid #dce1e6;
 		padding:6px;
 	}
+	.boxCon .forBox .imgBox{
+		background:pingk;
+	}
+	.boxCon .forBox .imgBox img{
+		margin-right:6px;
+	}
+	.boxCon .forBox .imgBox img:nth-child(2){
+		margin-top:-5px;
+	}
+	.boxCon .forBox .inpLeft{
+		width:290px;
+		height:277px;
+		background:yellowgreen;
+		padding:0px 63px;
+	}
+	.boxCon .forBox .inpLeft .line1{
+		height:40px;
+		border-bottom:1px solid #555;
+		font-size:18px;
+		color:#555;
+		line-height:40px;
+	}
+	.boxCon .forBox .inpLeft .line1 p{
+		width:145px;
+		text-align: center;
+		position:relative;
+	}
+	.boxCon .forBox .inpLeft .line1 p:nth-child(1){
+		color:#00b38a;
+	}
+
+	.boxCon .forBox .inpRight{
+		width:270px;
+		height:277px;
+		background:yellow;
+	}
 
 
 
@@ -47,11 +117,18 @@
 	<div class="boxCon">
 		<div class="logo"></div>
 		<form action="#" method="get">
-			<div class="forBox">
-				<div class="imgBox">
-					<img src="img2/qrcode-normal.svg" alt="">
-					<img src="img2/wx-login.svg" alt="">
+			<div class="forBox clearFixed">
+				<div class="imgBox clearFixed">
+					<img class="fl" src="img2/qrcode-normal.svg" alt="">
+					<img class="fl" src="img2/wx-login.svg" alt="">
 				</div>
+				<div class="inpLeft fl">
+					<div class="line1 clearFixed">
+						<p class="txtP1 fl btnRed btnWhit">密码登录</p>
+						<p class="txtP2 fl">验证码登录</p>
+					</div>
+				</div>
+				<div class="inpRight fl"></div>
 			</div>
 		</form>
 	</div>
