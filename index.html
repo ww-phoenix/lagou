@@ -492,14 +492,12 @@
        }
        .footer .fooTop{
            height:236px;
-           background:pink; 
            padding-top:50px;
        }
        .footer .fooTop .appBox{
            margin-right:130px;
            width:314px;
            height:170px;
-           background:red;
            border-right:1px solid #e8e8e8;
        }
        .footer .fooTop .appBox .btnApp{
@@ -513,7 +511,7 @@
            float:left;
            width:15px;
            height:15px;
-           background:yellow url(img/sprite2.png);
+           background:url(img/sprite2.png);
            margin-left:38px;
            margin-top:14px;
            margin-right:8px;
@@ -554,7 +552,6 @@
            background:#fafafa;
        }
        .footer .fooBottom .bottCon{
-           background:skyblue;
            height:100px;
            font-size:12px;
            color:#555;
@@ -579,8 +576,8 @@
        }
        .footer .fooBottom .bottCon .txtBox span{
            width:20px;
-           height:24px;
-           background-color:pink;
+           height:24px; 
+           background:url("img/sprite2.png") no-repeat;
            background-position:-132px -20px;
            margin-top:18px;
            margin-left:20px;
@@ -588,6 +585,9 @@
        .footer .fooBottom .bottCon .txtBox p{
            margin-top:8px;
            margin-left:10px;
+       }
+       .footer .fooBottom .bottCon .imgBox{
+           margin-top:50px;
        }
 
 
@@ -598,7 +598,7 @@
     </style>
 </head>
 
-<body style="height:9000px;">
+<body>
     <div id="box">
         <div class="header">
             <div class="h_top">
@@ -1201,6 +1201,7 @@
                             邮箱：cc@lagou.com
                         </p>
                     </div>
+                    <div class="fr imgBox"><img src="img/footer_lagou.png" alt=""></div>
                 </div>
             </div>
         </div>
